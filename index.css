@@ -1,0 +1,184 @@
+body {
+    background-color: #75cfb8;
+}
+
+/* 공통 적용 */
+.hidden {
+    display: none; 
+}
+
+.showing {
+    display: block;
+}
+
+/*첫번째 block*/
+.topBlock {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #f0e5d8;
+    font-weight: 700;
+}
+
+.js-clock {
+    font-size: 23px;
+}
+
+/*중간 block*/
+.mainBlock {
+    background-color: #f0e5d8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 60vh;
+}
+
+/*grid*/
+.toDoGrid {
+    margin: 10px 20px 20px;
+    display: grid; 
+    row-gap: 5px;
+
+    grid-template-columns: 40vh repeat(2, minmax(max-content,1fr)); 
+    grid-template-rows: min-content minmax(max-content, 50vh);
+
+}
+
+.gridCell {
+    display: flex; 
+    justify-content: center;
+    font-size: 15px;
+}
+
+.header {
+    color:#75cfb8;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.js-weather {
+    color: #ffc478;
+}
+
+/*grid-profile*/
+.profile {
+    display: flex; 
+    margin-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePic {
+    cursor: pointer;
+    width: 26vh; 
+    height: 26vh; 
+    background-image: url('images/default.jpg');
+    background-size: 100%;
+
+    border-radius: 13vh;
+    background-color: skyblue;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+input {
+    height: 30px;  
+}
+
+.greetingForm {
+    margin-top: 30px;
+}
+
+.greeting {
+    font-size: 25px;
+    color: hsl(0, 0%, 20%);
+}
+
+.progressBar {
+    border: solid hsl(0, 0%, 40%);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+
+    margin-top: -15px;
+    height: 8px;
+    width: 60%;
+    background-color:whitesmoke;
+}
+
+.progress {
+    height: 8px;
+    width: 0%;
+    background-color: #ffc478;
+    
+}
+
+/*grid-toDoList*/
+.toDoList {
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color:whitesmoke;
+    color: hsl(0, 0%, 20%);
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.toDos {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.toDosDone {
+    text-decoration: line-through;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+
+}
+
+/*마지막 block*/
+/*form*/
+.bottomBlock {
+    height: 15vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.toDoInput { 
+  height: 25px;
+  width: 300px;
+  margin-right: 20px;
+  
+}
+
+.formBtn {
+  height: 30px;
+  width: 60px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 0;
+
+  background-color: #f0e5d8;
+  color:hsl(0, 0%, 40%);
+}
+
+.formBtn:nth-child(2) {
+    background-color: #ffc478;
+}

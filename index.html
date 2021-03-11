@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Young's miniApp</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="topBlock js-clock">
+    <h1>00:00</h1>
+  </div>
+  <div class="topBlock js-weather"></div>
+
+  <div class="mainBlock">
+    <div class="toDoGrid">
+      <!--3*2 Grid-->
+      <div class="gridCell header"></div>
+      <div class="gridCell header">Today</div>
+      <div class="gridCell header">Later</div>
+      <div class="gridCell profile">
+        <div class="profilePic" OnClick="location.href ='https://blog.naver.com/PostList.nhn?blogId=lina_ny'"></div>
+        <form class="js-form greetingForm hidden">
+          <input type="text" placeholder="What is your name?"/>
+        </form>
+        <h4 class="js-greeting greeting hidden"></h4>
+        <div class="progressBar hidden">
+          <div class="progress js-progress"></div>
+        </div>
+      </div>
+      <div class="gridCell js-toDoListToday toDoList">
+        
+      </div>
+      <div class="gridCell js-toDoListLater toDoList">
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="bottomBlock js-toDoForm">
+    <input class='toDoInput'  type="text" placeholder="Write a to do" />
+    <input type="submit" class='js-todayBtn formBtn' value="Today">
+    <input type="submit" class='js-laterBtn formBtn' value="Later">
+  </div>
+
+  <script src="clock.js"></script>
+  <script src="greeting.js"></script>
+  <script src="todo.js"></script>
+  <!--<script src="bg.js"></script>-->
+  <script src="weather.js"></script>
+</body>
+
+</html>
