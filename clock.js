@@ -2,7 +2,7 @@ const clockContainer = document.querySelector(".js-clock"),
 clockTitle = clockContainer.querySelector("h1");
 
 function getTime(){
-  const date = new Date(); //유튜브 클론 코딩 강의에서 다루는 부분? js의 핵심
+  const date = new Date(); 
   const minutes = date.getMinutes();
   const hours = date.getHours();
   const seconds = date.getSeconds();

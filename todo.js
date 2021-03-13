@@ -81,6 +81,7 @@ function moveToDo(event) {
 
 function doneToDo(event) {
   const toDoDiv = event.target.parentNode.parentNode,
+    toDoDivId = toDoDiv.id,
     toDoTextDiv = toDoDiv.firstChild,
     toDoList = toDoDiv.parentNode,
     text = toDoTextDiv.innerText;
@@ -95,14 +96,12 @@ function doneToDo(event) {
 
   if (toDoList.classList.contains("js-toDoListToday")) {
     var today = true;
-    var newId = toDosDone_Today.length + 1;
   } else {
     var today = false;
-    var newId = toDosDone_Later.length + 1;
   }
 
   const toDoObj = {
-    id: newId,
+    id: toDoDivId,
     text: text,
   };
 
