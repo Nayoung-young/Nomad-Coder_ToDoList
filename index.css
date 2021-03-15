@@ -84,6 +84,10 @@ body {
 
 .content-profile-content {
     border: dashed;
+    display: flex; 
+
+    justify-content: center;
+    align-items: space-around;
 }
 
 .content-profile-form {
@@ -91,8 +95,17 @@ body {
 }
 
 .content-profile-greeting {
-
 }
+
+/*.content-progressbar {
+    border: solid hsl(0, 0%, 40%);
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+
+    height: 8px;
+    width: 60%;
+    background-color:whitesmoke;
+}*/
 
 .content-todolist{
     width: 60%;
@@ -108,6 +121,8 @@ body {
 
 .content-todolist-header {
     border: dashed;
+    display: flex; 
+    justify-content: center;
 }
 
 .content-todolist-content {
