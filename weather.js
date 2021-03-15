@@ -55,6 +55,7 @@ function loadCoords() {
 
 function init() {
   loadCoords();
+  alert("현재 이 프로젝트는 수정 중입니다! ");
 }
 
 init();
